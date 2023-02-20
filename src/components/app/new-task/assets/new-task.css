@@ -1,0 +1,63 @@
+#new-task{
+    width: calc(87vw - 40px);
+    max-width: 500px;
+    height: 20px;
+    
+    background-color: var(--foreground);
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    padding: 14px 20px;
+    
+    display: flex;
+    align-items: center;
+}
+
+#new-task > input{
+    border: none;
+    color: var(--text-input);
+    background: none;
+    font-size: 12px;
+    letter-spacing: -0.166667px;
+    flex: 1;
+    caret-color: #3A7CFD;
+    width: 0;
+}
+
+#new-task > input:focus{
+    outline: none;
+}
+
+#new-task > input::placeholder{
+    color: var(--text-two)
+}
+
+#circle{
+    width: 18px;
+    height: 18px;
+    border: var(--border-color) 1px solid;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+#error{
+    font-size: 12px;
+    letter-spacing: -0.166667px;
+    color: #C41C00;
+}
+
+@media screen and (min-width: 620px) {
+    #new-task{
+        height: 24px;
+        max-width: 492px;
+        padding: 20px 24px;
+    }
+    #new-task > input{
+        font-size: 18px;
+        line-height: 18px;
+    }
+    #circle{
+        width: 22px;
+        height: 22px;
+        margin-right: 20px;
+    }
+}

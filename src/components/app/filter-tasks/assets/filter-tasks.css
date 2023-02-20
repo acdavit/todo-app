@@ -1,0 +1,21 @@
+.filter-tasks{
+    width: 166px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-tasks > button{
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -0.194444px;
+
+    color: var(--text-two);
+}
+
+.filter-tasks > button:hover{
+    color: var(--hover);
+}

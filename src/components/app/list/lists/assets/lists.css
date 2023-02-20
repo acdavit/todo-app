@@ -1,0 +1,32 @@
+.list{
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    width: 87vw;
+    max-width: 540px;
+    margin: 16px 0;
+}
+
+.tasks{
+    overflow-y: scroll;
+    max-height: 50vh;
+}
+
+.no-filtered-tasks{
+    background: var(--foreground);
+    height: 105px;
+    display: grid;
+    place-items: center;
+    border-bottom: var(--border-color) 1px solid;
+    color: var(--text-two);
+    font-size: 20px;
+}
+
+@media screen and (min-width: 620px) {
+    .list{
+        margin: 24px;
+    }
+    .no-filtered-tasks{
+        height: 129px;
+    }
+}

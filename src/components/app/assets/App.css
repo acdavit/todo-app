@@ -1,0 +1,30 @@
+#app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+}
+
+
+#mobile-filter{
+    width: 87vw;
+    max-width: 540px;
+    height: 44px;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    background: var(--foreground);
+    box-shadow: var(--shadow);
+}
+
+@media screen and (min-width: 620px) {
+    #mobile-filter{
+        display: none;
+    }
+}

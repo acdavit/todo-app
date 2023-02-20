@@ -1,0 +1,63 @@
+.task{
+    height: 20px;
+    padding: 16px 20px;
+    background-color: var(--foreground);
+    border-bottom: var(--border-color) 1px solid;
+    display: flex;
+    align-items: center;
+}
+
+.task-label{
+    flex: 1;
+    margin: 0px 12px;
+    cursor: grab;
+    font-family: 'Josefin Sans';
+    font-size: 12px;
+    letter-spacing: -0.166667px;
+    color: var(--text-one);
+}
+
+.toggle-button{
+    width: 20px;
+    height: 20px;
+    border: var(--border-color) 1px solid;
+    border-radius: 50%;
+    background: none;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.toggle-button:hover{
+    border: linear-gradient(135deg, #55DDFF 0%, #C058F3 100%);
+}
+
+.remove-button{
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 620px){
+    .task{
+        height: 24px;
+        padding: 20px 24px;
+    }
+    .task-label{
+        font-size: 18px;
+        letter-spacing: -0.25px;
+        margin: 0px 20px;
+    }
+    .toggle-button{
+        width: 24px;
+        height: 24px;
+    }
+    .remove-button{
+        width: 18px;
+        height: 18px;
+        display: none;
+    }
+    .task:hover .remove-button {
+        display: block;
+    }
+}

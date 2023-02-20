@@ -1,0 +1,46 @@
+.list-end {
+    height: 44px;
+    padding: 0 20px;
+    padding-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--foreground);
+}
+
+.list-end > * {
+    font-size: 12px;
+    letter-spacing: -0.166667px;
+    color: var(--text-two);
+}
+
+.list-end > button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.list-end > button:hover{
+    color: var(--hover);
+}
+
+.computer-filter {
+    display: none;
+}
+
+@media screen and (min-width: 620px) {
+    .list-end{
+        height: 46px;
+        padding-bottom: 2px;
+    }
+    .list-end > *{
+        font-size: 14px;
+    }
+    .list-end > button{
+        content: 'fuck';
+        visibility: visible;
+    }
+    .computer-filter{
+        display: block;
+    }
+}

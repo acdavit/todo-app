@@ -1,0 +1,44 @@
+header{
+    width: 87vw;
+    max-width: 540px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-top: 48px;
+    margin-bottom: 40px;
+}
+
+header > button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+header > button > img {
+    width: 20px;
+    height: 20px;
+}
+
+#todo-logo{
+    color: white;
+    font-weight: 700;
+    font-size: 27px;
+    letter-spacing: 9px;
+}
+
+@media screen and (min-width: 620px) {
+    header {
+        margin-top: 70px;
+        margin-bottom: 48px;
+    }
+    header > button > img {
+        width: 26px;
+        height: 26px;
+    }
+    #todo-logo {
+        font-size: 40px;
+        letter-spacing: 15px;
+    }
+}

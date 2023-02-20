@@ -1,0 +1,28 @@
+#no-tasks{
+    width: 87vw;
+    max-width: 540px;
+    height: 77vw;
+    max-height: 540px;
+    margin: 16px 0;
+    background: var(--foreground);
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#no-tasks > h1, #no-tasks > h2{
+    margin: 0;
+    color: var(--text-two);
+    font-weight: 400;
+}
+
+#no-tasks > h1{ font-size: 40px; }
+#no-tasks > h2{ font-size: 15px; }
+
+@media screen and (min-width: 620px){
+    #no-tasks > h1{font-size: 60px;}
+    #no-tasks > h2{font-size: 25px;}
+}
